@@ -6,14 +6,14 @@ import { APP_ROUTES } from './app.routes';
 
 // Modulos
 import { PagesModule } from './pages/pages.module';
-
-import { AppComponent } from './app.component';
 import { ErrorsModule } from './errors/errors.module';
 import { LoginModule } from './login/login.module';
 
+import { AppComponent } from './app.component';
+
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
