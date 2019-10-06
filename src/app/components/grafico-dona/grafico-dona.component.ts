@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Label, MultiDataSet } from 'ng2-charts';
 import { ChartType } from 'chart.js';
 
@@ -9,19 +9,12 @@ import { ChartType } from 'chart.js';
 })
 export class GraficoDonaComponent implements OnInit {
 
-
-  // Doughnut
-  // public doughnutChartLabels: Label[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-  // public doughnutChartData: MultiDataSet = [
-  //   [350, 450, 100],
-  //   [50, 150, 120],
-  //   [250, 130, 70],
-  // ];
-  public doughnutChartLabels: Label[] = ['Download Sales', 'Sales 2', 'Sales 3', 'Sales 4'];
-  public doughnutChartData: MultiDataSet = [
-    [25, 25, 1, 25],
+  @Input() leyenda: string = 'Leyenda';
+  @Input() doughnutChartLabels: Label[] = ['Uno', 'Dos', 'Tres'];
+  @Input() doughnutChartData: MultiDataSet = [
+    [10, 20, 30]
   ];
-  public doughnutChartType: ChartType = 'doughnut';
+  @Input() doughnutChartType: ChartType = 'doughnut';
 
   constructor() { }
 
