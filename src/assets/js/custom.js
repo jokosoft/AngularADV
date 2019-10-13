@@ -4,7 +4,8 @@ Author: Wrappixel
 Email: niravjoshi87@gmail.com
 File: js
 */
-$(function() {
+function init_plugins() {
+    $(function() {
     "use strict";
     $(function() {
         $(".preloader").fadeOut();
@@ -154,4 +155,6 @@ $(function() {
         $(this).closest('.card').removeClass().slideUp('fast');
     });
 
-});
+    });
+
+}
