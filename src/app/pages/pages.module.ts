@@ -18,6 +18,15 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
+// modulos angular material autocomplete
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { AutocompleteComponent } from '../components/autocomplete/autocomplete.component';
+
 @NgModule({
     declarations: [
         PagesComponent,
@@ -26,7 +35,8 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
         Graficas1Component,
         IncrementadorComponent,
         GraficoDonaComponent,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        AutocompleteComponent
     ],
     exports: [
         PagesComponent,
@@ -39,7 +49,12 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
         SharedModule,
         PAGES_ROUTES,
         FormsModule,
-        ChartsModule
+        ChartsModule,
+        BrowserAnimationsModule,
+        ReactiveFormsModule,
+        MatAutocompleteModule,
+        MatFormFieldModule,
+        MatInputModule
     ]
 })
 export class PagesModule { }
