@@ -26,6 +26,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { AutocompleteComponent } from '../components/autocomplete/autocomplete.component';
+import { PromesaComponent } from './promesa/promesa.component';
 
 @NgModule({
     declarations: [
@@ -36,7 +37,8 @@ import { AutocompleteComponent } from '../components/autocomplete/autocomplete.c
         IncrementadorComponent,
         GraficoDonaComponent,
         AccountSettingsComponent,
-        AutocompleteComponent
+        AutocompleteComponent,
+        PromesaComponent
     ],
     exports: [
         PagesComponent,
